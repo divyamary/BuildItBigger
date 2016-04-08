@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:gravity="center"
+                tools:context=".MainActivityFragment">
+
+    <TextView
+        android:id="@+id/instructions_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instructions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/material_gray_900"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        />
+
+    <Button
+        android:id="@+id/tell_joke_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="tellJoke"
+        android:text="@string/button_text"
+        android:layout_below="@+id/instructions_text_view"
+        android:layout_marginBottom="12dp"
+        android:background="@color/material_orange_500"
+        android:layout_centerHorizontal="true"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tell_joke_button"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:indeterminateDrawable="@drawable/circular_progress_bar"/>
+
+</RelativeLayout>
