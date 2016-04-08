@@ -6,9 +6,6 @@ import android.support.test.espresso.IdlingResource;
 
 import java.util.List;
 
-/**
- * Created by divyamary on 30-03-2016.
- */
 public class AsyncTaskIdlingResource implements IdlingResource {
 
     ResourceCallback resourceCallback;
